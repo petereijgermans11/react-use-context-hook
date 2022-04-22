@@ -6,8 +6,10 @@ import UserContext from '../src/components/User/User';
 const user = {
     name: 'Peter',
     favorites: [
-        'avocado',
-        'carrot'
+        'egg',
+        'bread',
+        'cheese',
+        'salad'
     ]
 }
 
