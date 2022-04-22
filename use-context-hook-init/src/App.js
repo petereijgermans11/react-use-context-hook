@@ -1,13 +1,13 @@
 import React from 'react';
 import Navigation from '../src/components/Navigation/Navigation';
-import SaladMaker from '../src/components/SaladMaker/SaladMaker';
+import SandwichMaker from '../src/components/SandwichMaker/SandwichMaker';
 
 
 function App() {
     return (
         <>
             <Navigation/>
-            <SaladMaker/>
+            <SandwichMaker/>
         </>
     );
 }

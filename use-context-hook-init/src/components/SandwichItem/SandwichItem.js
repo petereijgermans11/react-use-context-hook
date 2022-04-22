@@ -28,7 +28,7 @@ const useStyles = createUseStyles({
     }
 });
 
-export default function SaladItem({ image, name }) {
+export default function SandwichItem({ image, name }) {
     const classes = useStyles();
     const favorite = true;
     return(
@@ -46,7 +46,7 @@ export default function SaladItem({ image, name }) {
     )
 }
 
-SaladItem.propTypes = {
+SandwichItem.propTypes = {
     image: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
 }

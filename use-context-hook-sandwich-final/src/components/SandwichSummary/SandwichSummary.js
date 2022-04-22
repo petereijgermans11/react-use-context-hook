@@ -1,5 +1,6 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { createUseStyles } from 'react-jss';
+import { SandwichContext } from '../SandwichMaker/SandwichMaker';
 
 const useStyles = createUseStyles({
     list: {
@@ -18,15 +19,14 @@ const useStyles = createUseStyles({
     }
 });
 
-export default function SaladSummary() {
+export default function SandwichSummary() {
     const classes = useStyles();
+    const { sandwich } = useContext(SandwichContext);
     return(
         <div className={classes.wrapper}>
-            <h2>Your Salad</h2>
+            <h2>Your Sandwich</h2>
             <ul className={classes.list}>
-                <li>Apple</li>
-                <li>Avocado</li>
-                <li>Carrots</li>
+                {sandwich.map(({ name, id }) => (<li key={id}>{name}</li>))}
             </ul>
         </div>
     )

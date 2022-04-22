@@ -1,5 +1,5 @@
 import React from 'react';
-import SaladItem from '../SaladItem/SaladItem';
+import SandwichItem from '../SandwichItem/SandwichItem';
 
 import { createUseStyles } from 'react-jss';
 
@@ -14,38 +14,54 @@ const useStyles = createUseStyles({
 
 const ingredients = [
     {
-        image: '🍎',
-        name: 'apple',
+        image: '🍞',
+        name: 'bread',
     },
     {
-        image: '🥑',
-        name: 'avocado',
+        image: '🥓',
+        name: 'bacon',
     },
     {
-        image: '🥦',
-        name: 'broccoli',
+        image: ' 🐄',
+        name: 'beef',
     },
     {
-        image: '🥕',
-        name: 'carrot',
+        image: '🍗',
+        name: 'chicken',
     },
     {
-        image: '🍷',
-        name: 'red wine dressing',
+        image: '🍳',
+        name: 'egg',
     },
     {
-        image: '🍚',
-        name: 'seasoned rice',
+        image: '🥫',
+        name: 'ketchup',
+    },
+    {
+        image: '🥗',
+        name: 'salad',
+    },
+    {
+        image: '🧀',
+        name: 'cheese',
+    },
+    {
+        image: '🥒',
+        name: 'cucumber',
+    },
+    {
+        image: '🌶️',
+        name: 'pepper',
     },
 ];
 
-export default function SaladBuilder() {
+export default function SandwichBuilder() {
     const classes = useStyles();
     return(
         <div className={classes.wrapper}>
             {
                 ingredients.map(ingredient => (
-                    <SaladItem
+                    <SandwichItem
                         key={ingredient.name}
                         image={ingredient.image}
                         name={ingredient.name}
